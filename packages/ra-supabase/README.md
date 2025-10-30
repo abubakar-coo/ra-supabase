@@ -146,7 +146,7 @@ When specifying the `source` prop of filter inputs, you can either set it to the
 
 ```jsx
 const postFilters = [
-  <SearchInput source="title@ilike" alwaysOn />,
+    <SearchInput source="title@ilike" alwaysOn />,
     <TextInput label="Views" source="views@gte" />,
 ];
 
