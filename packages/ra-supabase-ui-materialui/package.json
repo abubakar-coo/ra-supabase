@@ -1,6 +1,6 @@
 {
     "name": "ra-supabase-ui-materialui",
-    "version": "3.5.2",
+    "version": "3.6.0",
     "repository": "git@github.com:marmelab/ra-supabase.git",
     "author": "Gildas Garcia <1122076+djhi@users.noreply.github.com>",
     "license": "MIT",
@@ -15,7 +15,7 @@
     "types": "esm/index.d.ts",
     "sideEffects": false,
     "dependencies": {
-        "ra-supabase-core": "^3.5.2"
+        "ra-supabase-core": "^3.6.0"
     },
     "devDependencies": {
         "@mui/icons-material": "^5.16.12",
@@ -43,8 +43,8 @@
     "scripts": {
         "build": "yarn run build-cjs && yarn run build-esm",
         "build-cjs": "rimraf ./lib && tsc",
-        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-        "watch": "tsc --outDir esm --module es2015 --watch",
+        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2020",
+        "watch": "tsc --outDir esm --module es2020 --watch",
         "lint": "eslint --fix ./src"
     }
 }
